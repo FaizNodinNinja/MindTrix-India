@@ -1,0 +1,1134 @@
+{% extends 'base/common/base.html'%}
+{% load static %}
+{% block main %}
+
+<!-- Navbar & Carousel Start -->
+<div class="container-fluid position-relative p-0">
+    <div id="header-carousel" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="w-100 h-100" autoplay loop muted playsinline>
+                    <source src="{% static 'img/video.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3 text-center" style="max-width: 900px;">
+                        <h5 id="changing-subtitle" class="text-white text-uppercase mb-3 animated-text">
+                            Empowering Your Digital Future
+                        </h5>
+                        <h1 id="changing-title" class="display-1 text-white mb-md-4 animated-text">
+                            Innovative Solutions for Modern Businesses
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Carousel End -->
+
+<!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+            <div class="modal-header border-0">
+                <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center justify-content-center">
+                <div class="input-group" style="max-width: 600px;">
+                    <input type="text" class="form-control bg-transparent border-primary p-3"
+                           placeholder="Type search keyword">
+                    <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Full Screen Search End -->
+
+
+<!-- About Start -->
+<div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title-2 position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                    <h1 class="mb-0">Innovative IT Solutions with a Decade of Excellence</h1>
+                </div>
+                <p class="mb-4">Mindtrix, We are dedicated to revolutionizing the tech industry with cutting-edge
+                    AI-driven solutions. With over 10 years of experience, we specialize in automation, artificial
+                    intelligence, and IT solutions that empower businesses to scale efficiently and stay ahead in the
+                    digital era. Our expertise lies in AI development, cloud computing, software engineering, and
+                    enterprise automation, delivering seamless and intelligent solutions tailored to your needs.</p>
+                <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <nav>
+                        <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                            <button class="nav-link text-uppercase active" id="nav-story-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story"
+                                    aria-selected="true">Story
+                            </button>
+                            <button class="nav-link text-uppercase" id="nav-mission-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
+                                    aria-selected="false">Mission
+                            </button>
+                            <button class="nav-link text-uppercase" id="nav-vision-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
+                                    aria-selected="false">Vision
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-story" role="tabpanel"
+                             aria-labelledby="nav-story-tab">
+                            <p> Founded with a vision to simplify and automate complex business processes, Mindtrix
+                                has grown into a trusted name in the IT industry. We combine innovation with
+                                reliability, ensuring that businesses of all sizes can leverage AI-powered automation
+                                for enhanced productivity and success.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-mission" role="tabpanel"
+                             aria-labelledby="nav-mission-tab">
+                            <p>To provide state-of-the-art AI and IT solutions that transform businesses, enhance
+                                efficiency, and drive technological evolution with innovation and integrity.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                            <p>To be a global leader in AI automation, empowering industries with smart, scalable, and
+                                future-ready solutions that redefine possibilities in technology.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+                         src="{% static 'img/about.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Work Process Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Work Process</h5>
+            <h1 class="mb-0">Step By Step Simple & Clean Working Process</h1>
+        </div>
+        <div class="row g-5 justify-content-center">
+            <div class="col-6 col-lg-3 process-item wow slideInUp" data-wow-delay="0.2s">
+                <div class="position-relative d-flex flex-column align-items-center text-center">
+                    <div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-search fa-2x text-icon"></i>
+                    </div>
+                    <h3>Research</h3>
+                    <p class="mb-0" style="text-align: justify;">We conduct thorough research to understand your
+                        business needs, ensuring we create the right strategies for success.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 process-item wow slideInUp" data-wow-delay="0.2s">
+                <div class="position-relative d-flex flex-column align-items-center text-center">
+                    <div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                        <i class="bi bi-gear-wide-connected text-icon"></i>
+                        <!--<i class="fa-solid fa-arrows-to-circle text-icon"></i>-->
+                    </div>
+                    <h3>Concept</h3>
+                    <p class="mb-0" style="text-align: justify;">We transform ideas into actionable concepts, laying the
+                        foundation for innovative and effective solutions.</p>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-lg-3 process-item wow slideInUp" data-wow-delay="0.2s">
+                <div class="position-relative d-flex flex-column align-items-center text-center">
+                    <div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                        <i class="bi bi-file-earmark-code text-icon"></i>
+                        <!--<i class="fa-solid fa-code text-icon"></i>-->
+                    </div>
+                    <h3>Development</h3>
+                   <p class="mb-0" style="text-align: justify;">Our expert team develops scalable and secure solutions,
+                        turning concepts into fully functional and high-performance systems.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 process-item wow slideInUp" data-wow-delay="0.2s">
+                <div class="position-relative d-flex flex-column align-items-center text-center">
+                    <div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                        <i class="bi bi-clipboard-check text-icon"></i>
+                        <!--<i class="fa-solid fa-terminal text-icon"></i>-->
+                    </div>
+                    <h3>Finalization</h3>
+                   <p class="mb-0" style="text-align: justify;">We perform extensive testing and refinement, ensuring
+                        the final product meets the highest standards before delivery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Work Process End -->
+
+
+
+<!-- Facts Section Start -->
+<div class="container-fluid facts pb-5 pt-lg-0 mt-0">
+    <div class="container container1 py-2 pt-lg-0">
+        <div class="row row1 gx-4 gy-4">
+
+            <div class="col-lg-6 d-flex">
+                <div class="content-box box1 text-start w-100 p-4" >
+                    <h2 class="fw-bold mb-0 text-white" data-toggle="counter-up">2</h2>
+                    <h5 class="text-uppercase text-white">Happy Clients</h5>
+                    <p class="mb-0 d-none d-sm-block" style="text-align: justify;">With over 2.5+ years in the industry, we bring a wealth of experience and innovation to every project.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex">
+                <div class="content-box box text-start w-100 p-4" >
+                    <h2 class="fw-bold mb-0 text-white" data-toggle="counter-up">100</h2>
+                    <h5 class="text-uppercase text-white">Happy Clients</h5>
+                    <p class="mb-0 d-none d-sm-block" style="text-align: justify;">We have effectively provided premium digital marketing, best website design, and branding services.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex">
+                <div class="content-box box text-start w-100 p-4" >
+                    <h2 class="fw-bold mb-0 text-white" data-toggle="counter-up">2</h2>
+                    <h5 class="text-uppercase text-white">Years of Experience</h5>
+                    <p class="mb-0 d-none d-sm-block" style="text-align: justify;">With over 2.5+ years in the industry, we bring a wealth of experience and innovation to every project.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex">
+                <div class="content-box box1 text-start w-100 p-4" >
+                    <h2 class="fw-bold mb-0 text-white" data-toggle="counter-up">50</h2>
+                    <h5 class="text-uppercase text-white">Projects Delivered</h5>
+                    <p class="mb-0 d-none d-sm-block" style="text-align: justify;">We have effectively provided premium digital marketing, best website design, and branding services.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Facts Section End -->
+
+
+
+
+
+
+<!-- Service Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-1">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-5" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s"
+                         src="{% static 'img/managed-services.png' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title-2 position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
+                    <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div
+                                class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon text-icon">
+                               <i class="bi bi-braces-asterisk"></i>
+                            </div>
+                            <h4 class="mb-3">Software Development</h4>
+                            <p class="m-0">We deliver custom software development tailored to your unique business
+                                needs. </p>
+                            <a class="btn btn-lg btn-primary rounded" href="#">
+                           <i class="bi bi-code-slash"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div
+                                class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon text-icon">
+                               <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h4 class="mb-3">Web Development </h4>
+                            <p class="m-0">We create dynamic, responsive, and user-friendly websites that elevate your
+                                online presence. </p>
+                            <a class="btn btn-lg btn-primary rounded" href="#">
+                               <i class="bi bi-braces"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-7">
+                <div class="row g-5">
+                    <div class="col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div
+                                class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon text-icon">
+                           <i class="bi bi-phone-flip"></i>
+                            </div>
+                            <h4 class="mb-3">Mobile App Development</h4>
+                            <p class="m-0">We develop custom iOS, Android, and cross-platform apps with seamless
+                                functionality, intuitive design. </p>
+                            <a class="btn btn-lg btn-primary rounded" href="#">
+                                <i class="fa-solid fa-code"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div
+                                class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon text-icon">
+                         <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <h4 class="mb-3">Digital Marketing</h4>
+                    <p class="m-0">We offer comprehensive digital marketing strategies that boost your online presence
+                        and drive growth.
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded" href="#">
+                        <i class="bi bi-megaphone-fill"></i>
+
+                    </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                <div
+                        class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                    <h3 class="text-icon mb-3">Call Us For Quote</h3>
+                    <p class="text-icon mb-3">
+                        </p>
+                    <h2 class="text-icon mb-0 ">+919695388053</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-1">
+
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon text-icon">
+                     <i class="fa-brands fa-searchengin"></i>
+                    </div>
+                    <h4 class="mb-3">SEO Optimization</h4>
+                    <p class="m-0">We provide strategic SEO services to improve your website’s ranking on search
+                        engines, driving more organic traffic.
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded" href="#">
+                      <i class="bi bi-graph-up-arrow"></i>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon text-icon">
+                       <i class="bi bi-window-sidebar"></i>
+                    </div>
+                    <h4 class="mb-3">Ui/Ux Design</h4>
+                    <p class="m-0">We create intuitive, visually appealing, and user-friendly designs that enhance
+                        digital experiences.
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded" href="#">
+                        <i class="bi bi-window-fullscreen"></i>
+
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+<!-- Industries  -->
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-3 justify-content-center">
+            <div class="section-title-2 position-relative pb-3 mb-5 text-center">
+                <h1 class="mb-0">Industries We Serve</h1>
+            </div>
+        </div>
+
+        <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="industry-box text-center p-3 bg-primary rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-graduation-cap text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Education</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="industry-box text-center p-3 bg-info rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-shopping-cart text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">E-Commerce</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="industry-box text-center p-3 bg-danger rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-stethoscope text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Health Care</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="industry-box text-center p-3 bg-dark rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-film text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Entertainment</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="industry-box text-center p-3 bg-danger rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-university text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Financial Services</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-3 justify-content-center mt-3">
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="industry-box text-center p-3 bg-success rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-industry text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Industries</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="industry-box text-center p-3 bg-warning rounded d-flex flex-column align-items-center">
+                    <i class="fas fa-truck text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Logistics</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="industry-box text-center p-3 bg-secondary rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-utensils text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Restaurant</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="industry-box text-center p-3 bg-warning rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-home text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">Real Estate</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 col-xl-1-5 wow fadeInUp" data-wow-delay="1.0s">
+                <div class="industry-box text-center p-3 bg-success rounded-3 d-flex flex-column align-items-center">
+                    <i class="fas fa-laptop-code text-white" style="font-size: 30px;"></i>
+                    <p class="mt-2 text-white">IT Companies</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Industries End  -->
+
+
+<!-- technology  -->
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-1">
+        <div class="row g-3 justify-content-center">
+            <div class="section-title-2 position-relative pb-3 mb-5 text-center">
+                <h5 class="fw-bold text-primary text-uppercase"></h5>
+                <h1 class="mb-0 ">Technology</h1>
+            </div>
+            <div class="col-md-2 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="skill-box text-center p-3 bg-light rounded d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="percentage-circle border border-primary text-primary rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 70px; height: 70px; border-width: 2px;">
+                            <p class="mb-0">95%</p>
+                        </div>
+                    </div>
+                    <p class="mt-2">HTML/CSS</p>
+                </div>
+            </div>
+            <div class="col-md-2 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="skill-box text-center p-3 bg-light rounded d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="percentage-circle border border-secondary text-secondary rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 70px; height: 70px; border-width: 2px;">
+                            <p class="mb-0">85%</p>
+                        </div>
+                    </div>
+                    <p class="mt-2">Python</p>
+                </div>
+            </div>
+            <div class="col-md-2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="skill-box text-center p-3 bg-light rounded d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="percentage-circle border border-dark text-dark rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 70px; height: 70px; border-width: 2px;">
+                            <p class="mb-0">90%</p>
+                        </div>
+                    </div>
+                    <p class="mt-2">Django/Flask</p>
+                </div>
+            </div>
+            <div class="col-md-2 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="skill-box text-center p-3 bg-light rounded d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="percentage-circle border border-danger text-danger rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 70px; height: 70px; border-width: 2px;">
+                            <p class="mb-0">90%</p>
+                        </div>
+                    </div>
+                    <p class="mt-2">Javascript</p>
+                </div>
+            </div>
+            <div class="col-md-2 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="skill-box text-center p-3 bg-light rounded d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="percentage-circle border border-warning text-warning rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 70px; height: 70px; border-width: 2px;">
+                            <p class="mb-0">95%</p>
+                        </div>
+                    </div>
+                    <p class="mt-2">React JS</p>
+                </div>
+            </div>
+            <div class="col-md-2 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="skill-box text-center p-3 bg-light rounded d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="percentage-circle border border-info text-info rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 70px; height: 70px; border-width: 2px;">
+                            <p class="mb-0">85%</p>
+                        </div>
+                    </div>
+                    <p class="mt-2">SQL/NoSQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- technology End  -->
+
+
+<!-- Features Start -->
+<div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
+            <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                             style="width: 60px; height: 60px;">
+                            <i class="fa fa-cubes text-icon"></i>
+                        </div>
+                        <h4>Best In Industry</h4>
+                        <p class="mb-0">Delivering top-tier solutions with unmatched expertise and industry-leading
+                            innovation</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                             style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-icon"></i>
+                        </div>
+                        <h4>Award Winning</h4>
+                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                    </div>
+
+                </div>
+                <div class="row g-5 mt-1">
+                    <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                             style="width: 60px; height: 60px;">
+                            <i class="fa fa-cubes text-icon"></i>
+                        </div>
+                        <h4>100% success</h4>
+                        <p class="mb-0">Committed to delivering flawless results, ensuring complete satisfaction and
+                            success every time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
+                         src="{% static 'img/why.png' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.4s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                             style="width: 60px; height: 60px;">
+                            <i class="fa fa-users-cog text-icon"></i>
+                        </div>
+                        <h4>Professional Staff</h4>
+                        <p class="mb-0">Highly skilled and dedicated professionals delivering exceptional results with
+                            expertise.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.8s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                             style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-icon"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p class="mb-0">Reach us anytime via phone, email, live chat, or our helpdesk for quick
+                            assistance.</p>
+                    </div>
+                </div>
+                <div class="row g-5 mt-1">
+                    <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.4s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                             style="width: 60px; height: 60px;">
+                            <i class="fa fa-users-cog text-icon"></i>
+                        </div>
+                        <h4>Award Winning</h4>
+                        <p class="mb-0">Recognized for excellence through prestigious awards in innovation, performance,
+                            and leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Features Start -->
+
+
+
+<!-- Vendor Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5 mb-5">
+        <div class="bg-white">
+            <div class="owl-carousel vendor-carousel">
+                <img src="{% static 'img/vendor-1.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-2.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-3.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-4.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-5.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-6.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-7.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-8.jpg' %}" alt="">
+                <img src="{% static 'img/vendor-9.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Vendor End -->
+
+<!-- Project Start -->
+<div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-0">
+        <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Our Projects</h5>
+            <h1 class="mb-0">Projects Completed for Our Happy Clients</h1>
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-5" id="portfolio-flters">
+                    <li class="btn btn-outline-primary py-2 px-4 active" data-filter="*">
+                        <i class="fa fa-star me-2"></i>All
+                    </li>
+                    <li class="btn btn-outline-primary py-2 px-4" data-filter=".first">
+                        <i class="fa fa-laptop-code me-2"></i>Design
+                    </li>
+                    <li class="btn btn-outline-primary py-2 px-4" data-filter=".second">
+                        <i class="fa fa-mobile-alt me-2"></i>Development
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-5 portfolio-container">
+            <div class="col-xl-4 col-lg-4 col-md-4 portfolio-item first wow slideInUp" data-wow-delay="0.1s">
+                <div class="position-relative portfolio-box">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+                    </div>
+                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                        <h4>Project Name</h4>
+                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web
+                            Design</small>
+                    </a>
+                    <div class="portfolio-btn">
+                        <a href="{% static 'img/portfolio-1.jpg' %}" data-lightbox="portfolio"><i
+                                class="bi bi-plus display-1 text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 portfolio-item second wow slideInUp" data-wow-delay="0.3s">
+                <div class="position-relative portfolio-box">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-2.jpg' %}" alt="">
+                    </div>
+                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                        <h4>Project Name</h4>
+                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web
+                            Development</small>
+                    </a>
+                    <div class="portfolio-btn">
+                        <a href="{% static 'img/portfolio-2.jpg' %}" data-lightbox="portfolio"><i
+                                class="bi bi-plus display-1 text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 portfolio-item first wow slideInUp" data-wow-delay="0.5s">
+                <div class="position-relative portfolio-box">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-3.jpg' %}" alt="">
+                    </div>
+                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                        <h4>Project Name</h4>
+                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web
+                            Design</small>
+                    </a>
+                    <div class="portfolio-btn">
+                        <a href="{% static 'img/portfolio-3.jpg' %}" data-lightbox="portfolio"><i
+                                class="bi bi-plus display-1 text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 portfolio-item second wow slideInUp" data-wow-delay="0.1s">
+                <div class="position-relative portfolio-box">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-4.jpg' %}" alt="">
+                    </div>
+                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                        <h4>Project Name</h4>
+                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web
+                            Development</small>
+                    </a>
+                    <div class="portfolio-btn">
+                        <a href="{% static 'img/portfolio-4.jpg' %}" data-lightbox="portfolio"><i
+                                class="bi bi-plus display-1 text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 portfolio-item first wow slideInUp" data-wow-delay="0.3s">
+                <div class="position-relative portfolio-box">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-5.jpg' %}" alt="">
+                    </div>
+                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                        <h4>Project Name</h4>
+                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web
+                            Design</small>
+                    </a>
+                    <div class="portfolio-btn">
+                        <a href="{% static 'img/portfolio-5.jpg' %}" data-lightbox="portfolio"><i
+                                class="bi bi-plus display-1 text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 portfolio-item second wow slideInUp" data-wow-delay="0.5s">
+                <div class="position-relative portfolio-box">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-6.jpg' %}" alt="">
+                    </div>
+                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                        <h4>Project Name</h4>
+                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web
+                            Development</small>
+                    </a>
+                    <div class="portfolio-btn">
+                        <a href="{% static 'img/portfolio-6.jpg' %}" data-lightbox="portfolio"><i
+                                class="bi bi-plus display-1 text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centered Button -->
+        <div class="row mt-5 mb-3">
+            <div class="col-12 text-center">
+                <a href="{% url 'project' %}" class="btn btn-primary py-3 px-5">View More Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project End -->
+
+
+
+
+
+<!-- FAQs Section Start -->
+<div class="container-fluid py-5">
+  <div class="container py-5">
+
+    <div class="d-flex flex-column flex-lg-row gap-5 align-items-start">
+      <!-- LEFT SIDE: Title, Paragraph -->
+      <div class="flex-fill faq-column">
+        <div class="section-title-1 position-relative pb-3 mb-4">
+          <h5 class="fw-bold text-primary text-uppercase">General FAQs</h5>
+          <h1 class="mb-0">Any Question? Check the FAQs or Contact Us</h1>
+        </div>
+        <p class="mb-4">
+         Have a question or need assistance? We’re here to help! At Mindtrix, we value clear communication and seamless support. Whether you're curious about our services, need help navigating our platform, or want to discuss a custom project, you can easily find answers in our Frequently Asked Questions (FAQs).
+        </p>
+        <a href="#" class="btn btn-primary py-3 px-5 me-3">Explore More FAQs</a>
+      </div>
+
+      <!-- RIGHT SIDE: Image -->
+      <div class="flex-fill faq-column d-none d-lg-block">
+        <img src="{% static 'img/faq.jpg' %}" alt="FAQs Image" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+  <!-- FAQs Accordion Section -->
+<div class="accordion mt-5" id="accordionExample">
+
+  <!-- FAQ 1 -->
+  <div class="accordion-item mb-2">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed text-icon" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        How does Mindtrix incorporate Artificial Intelligence into its business solutions?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        At Mindtrix, we integrate AI through predictive analytics, machine learning algorithms, AI-powered chatbots, and intelligent automation tools.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 2 -->
+  <div class="accordion-item mb-2">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button text-icon collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Why is Mindtrix considered a tech-leading industry player?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Mindtrix stands out for its innovative approach, client-centric strategies, and commitment to quality with AI integrations.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 3 -->
+  <div class="accordion-item mb-2">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button text-icon collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Can your services be scaled as my business grows?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Absolutely. All our solutions are built with scalability in mind.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 4 -->
+  <div class="accordion-item mb-2">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button text-icon collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        What kind of customer support is available?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        We provide 24/7 professional customer support through phone, email, WhatsApp, and live chat.
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 5 -->
+  <div class="accordion-item mb-2">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button text-icon collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        How does Mindtrix position itself within the tech industry?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Mindtrix positions itself as a future-ready technology solutions provider by combining advanced software engineering with AI innovation.
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- FAQs Accordion End -->
+
+  </div>
+</div>
+<!-- FAQs Section End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-1 text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+            <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="{% static 'img/testimonial-1.jpg' %}" style="width: 60px; height: 60px;">
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Client Name</h4>
+                        <small class="text-uppercase">Profession</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="{% static 'img/testimonial-2.jpg' %}" style="width: 60px; height: 60px;">
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Client Name</h4>
+                        <small class="text-uppercase">Profession</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="{% static 'img/testimonial-3.jpg' %}" style="width: 60px; height: 60px;">
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Client Name</h4>
+                        <small class="text-uppercase">Profession</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="{% static 'img/testimonial-4.jpg' %}" style="width: 60px; height: 60px;">
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Client Name</h4>
+                        <small class="text-uppercase">Profession</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+<!-- Quote Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title-1 position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
+                    <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                </div>
+                <div class="row gx-3">
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                        <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support
+                        </h5>
+                    </div>
+                </div>
+                <p class="mb-4">We are here to provide tailored solutions for your business needs. Reach out today and
+                    get a free, no-obligation quote. Our team is committed to responding within 24 hours to discuss your
+                    requirements and offer you the best options.</p>
+                <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                         style="width: 60px; height: 60px;">
+                        <i class="fa fa-phone-alt text-white"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="mb-2">Call to ask any question</h5>
+                        <h4 class="text-primary mb-0">+91-9695388053</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
+                     data-wow-delay="0.9s">
+
+                    <!--           form       -->
+
+                     <form id="contactForm" method="post" novalidate="novalidate">
+                    {% csrf_token %}
+                    <div class="row gx-3">
+                        <div class="form-group">
+                            {{ form.name.label_tag }}
+                            <input type="text" class="form-control" id="{{ form.name.id_for_label }}"
+                                   name="{{ form.name.html_name }}" placeholder="Your Name" style="height: 55px;">
+                            {% if form.name.errors %}
+                            <p class="text-danger">{{ form.name.errors|join:", " }}</p>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.email.label_tag }}
+                            <input type="email" class="form-control" id="{{ form.email.id_for_label }}"
+                                   name="{{ form.email.html_name }}" placeholder="Your Email" style="height: 55px;">
+                            {% if form.email.errors %}
+                            <p class="text-danger">{{ form.email.errors|join:", " }}</p>
+                            {% endif %}
+                        </div>
+
+                         <div class="form-group">
+                            {{ form.phone.label_tag }}
+                            <input type="text" class="form-control" id="{{ form.phone.id_for_label }}"
+                                   name="{{ form.phone.html_name }}" placeholder="Your phone number" style="height: 55px;">
+                            {% if form.phone.errors %}
+                            <p class="text-danger">{{ form.phone.errors|join:", " }}</p>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.service.label_tag }}
+                            <select class="form-control" id="{{ form.service.id_for_label }}"
+                                    name="{{ form.service.html_name }}" style="height: 55px;">
+                                <option value="">Select</option>
+                                {% for choice in form.service.field.choices %}
+                                <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+                                {% endfor %}
+                            </select>
+                            {% if form.service.errors %}
+                            <p class="text-danger">{{ form.service.errors|join:", " }}</p>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.message.label_tag }}
+                            <textarea class="form-control" id="{{ form.message.id_for_label }}"
+                                      name="{{ form.message.html_name }}" rows="2" placeholder="Message"></textarea>
+                            {% if form.message.errors %}
+                            <p class="text-danger">{{ form.message.errors|join:", " }}</p>
+                            {% endif %}
+                        </div>
+
+                        <div class="col-12 mt-2">
+                            <button class="btn btn-dark w-100 py-3" type="submit" id="sendMessageButton">
+                                <span>SEND</span>
+                                <div class="d-none spinner-border spinner-border-sm text-light ms-3"
+                                     role="status">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Quote End -->
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
+            <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/blog-1.jpg' %}" alt="">
+                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                           href="#">Software Development</a>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex mb-3">
+                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                        <h4 class="mb-3 fs-5">Top 12 Software Development Methodologies For Your Project</h4>
+                        <p>Do you wish to find the best way to approach your software development? Well, handpicking the right software development methodology…</p>
+                        <a class="text-uppercase" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/blog-2.jpg' %}" alt="">
+                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                           href="#">Web Development</a>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex mb-3">
+                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                        <h4 class="mb-3 fs-5">Which Are The Top Python Frameworks For Web Development In 2025?</h4>
+                        <p>Python is a widely used programming language that is even used by big companies like Google, Apple, and Netflix, and…</p>
+                        <a class="text-uppercase" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/blog-3.jpg' %}" alt="">
+                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                           href="#">SEO Optimization</a>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex mb-3">
+                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                        <h4 class="mb-3 fs-6">Drive Organic Traffic & Increase Conversions with Expert SEO</h4>
+                        <p>The entire effectiveness of social media marketing has been unlocked. Having a strong social media presence is crucial for businesses of all types in the present digital world.</p>
+                        <a class="text-uppercase" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog Start -->
+
+
+
+
+{% endblock %}
+
