@@ -1,0 +1,232 @@
+{% extends 'base/common/base.html'%}
+{% load static %}
+{% block main %}
+
+
+ <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn mb-3">About Us</h1>
+                    <a href="#" class="h5 text-white">Home</a>
+                    <i class="fa fa-angle-double-right text-white px-2"></i>
+                    <a href="#" class="h5 text-white">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title-2 position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                        <h1 class="mb-0">Innovative IT Solutions with a Decade of Excellence</h1>
+                    </div>
+                    <p class="mb-4">MindTrix, We are dedicated to revolutionizing the tech industry with cutting-edge AI-driven solutions. With over 10 years of experience, we specialize in automation, artificial intelligence, and IT solutions that empower businesses to scale efficiently and stay ahead in the digital era. Our expertise lies in AI development, cloud computing, software engineering, and enterprise automation, delivering seamless and intelligent solutions tailored to your needs.</p>
+                    <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <nav>
+                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                <button class="nav-link text-uppercase active" id="nav-story-tab" data-bs-toggle="tab" data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story" aria-selected="true">Story</button>
+                                <button class="nav-link text-uppercase" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="false">Mission</button>
+                                <button class="nav-link text-uppercase" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Vision</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-story" role="tabpanel"
+                                aria-labelledby="nav-story-tab">
+                                <p>Founded with a vision to simplify and automate complex business processes, MindTrix has grown into a trusted name in the IT industry. We combine innovation with reliability, ensuring that businesses of all sizes can leverage AI-powered automation for enhanced productivity and success.</p>
+
+                            </div>
+                            <div class="tab-pane fade" id="nav-mission" role="tabpanel"
+                                aria-labelledby="nav-mission-tab">
+                                <p>To provide state-of-the-art AI and IT solutions that transform businesses, enhance efficiency, and drive technological evolution with innovation and integrity.</p>
+
+                            </div>
+                            <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                                <p>To be a global leader in AI automation, empowering industries with smart, scalable, and future-ready solutions that redefine possibilities in technology.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{% static 'img/about.jpg'%}" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-2 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Success Story</h5>
+                <h1 class="mb-0">1 Years of Our Journey The Story of MindTrix</h1>y
+                <p>“Great companies are built in the office, with hard work put in by a team.”</p>
+
+            </div>
+            <div class="container story position-relative">
+                <div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-12 text-md-center">
+                        <div class="d-inline-block bg-primary text-white rounded py-2 px-4">Now</div>
+                    </div>
+                </div>
+                <div class="row gx-5 story-right position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-md-6 text-md-end">
+                        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 April, 2021</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                            <h4>Lorem ipsum dolor</h4>
+                            <p class="m-0">Lorem ipsum dolor sit amet elit ornare velit non</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="row gx-5 story-left position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-md-6 d-block d-md-none">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2021</h6>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 text-md-end">-->
+                <!--        <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">-->
+                <!--            <h4>Lorem ipsum dolor</h4>-->
+                <!--            <p class="m-0">Lorem ipsum dolor sit amet elit ornare velit non</p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 d-none d-md-block">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2021</h6>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-12 text-md-center">-->
+                <!--        <div class="d-inline-block bg-primary text-white rounded py-2 px-4">2020</div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row gx-5 story-right position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-md-6 text-md-end">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jun, 2020</h6>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6">-->
+                <!--        <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">-->
+                <!--            <h4>Lorem ipsum dolor</h4>-->
+                <!--            <p class="m-0">Lorem ipsum dolor sit amet elit ornare velit non</p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row gx-5 story-left position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-md-6 d-block d-md-none">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2020</h6>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 text-md-end">-->
+                <!--        <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">-->
+                <!--            <h4>Lorem ipsum dolor</h4>-->
+                <!--            <p class="m-0">Lorem ipsum dolor sit amet elit ornare velit non</p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 d-none d-md-block">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2020</h6>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-12 text-md-center">-->
+                <!--        <div class="d-inline-block bg-primary text-white rounded py-2 px-4">2019</div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row gx-5 story-right position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-md-6 text-md-end">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jun, 2019</h6>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6">-->
+                <!--        <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">-->
+                <!--            <h4>Lorem ipsum dolor</h4>-->
+                <!--            <p class="m-0">Lorem ipsum dolor sit amet elit ornare velit non</p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row gx-5 story-left position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-md-6 d-block d-md-none">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2019</h6>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 text-md-end">-->
+                <!--        <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">-->
+                <!--            <h4>Lorem ipsum dolor</h4>-->
+                <!--            <p class="m-0">Lorem ipsum dolor sit amet elit ornare velit non</p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 d-none d-md-block">-->
+                <!--        <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2019</h6>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row wow fadeInUp" data-wow-delay="0.1s">-->
+                <!--    <div class="col-12 text-md-center">-->
+                <!--        <div class="d-inline-block bg-primary text-white rounded py-2 px-4">Launched</div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+     <!-- Features Start -->
+     <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded border-top border-5 border-primary d-flex flex-column align-items-center text-center p-5">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-4" style="width: 75px; height: 75px;">
+                            <i class="fa fa-award fa-2x text-white"></i>
+                        </div>
+                        <h3>Award Winning</h3>
+                        <p class="mb-0">Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus sed et</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.4s">
+                    <div class="bg-light rounded border-top border-5 border-primary d-flex flex-column align-items-center text-center p-5">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-4" style="width: 75px; height: 75px;">
+                            <i class="fa fa-users fa-2x text-white"></i>
+                        </div>
+                        <h3>Professional Staff</h3>
+                        <p class="mb-0">Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus sed et</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.8s">
+                    <div class="bg-light rounded border-top border-5 border-primary d-flex flex-column align-items-center text-center p-5">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-4" style="width: 75px; height: 75px;">
+                            <i class="fa fa-phone-alt fa-2x text-white"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p class="mb-0">Eos vero dolore eirmod diam duo lorem magna sit sea dolore sanctus sed et</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+{% endblock %}
