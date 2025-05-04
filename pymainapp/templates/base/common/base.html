@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MindTrix: Your Trusted Partner in Intelligent Solutions</title>
+
+
+    <meta  name="description" content="MindTrix, based in Lucknow, Uttar Pradesh, India, offers innovative IT solutions using AI, cloud, and data analytics. We empower businesses globally to drive growth and achieve excellence in the digital age.">
+
+    <meta  name="keywords" content="Mindtrix IT Solutions, Mindtrix Software Company, Mindtrix Intelligent Systems, Mindtrix Digital Services, Mindtrix Innovation LabIntelligent IT Solutions, Digital Transformation Services, Custom Software Development, AI-Powered Solutions, Cloud Computing Services, Innovative Tech Solutions,
+    End-to-End IT Services,Business Automation Solutions,Enterprise Software Development,Smart Digital Solutions, Trusted Technology Partner for Businesses ,AI and Machine Learning Solutions for Enterprises,
+    Scalable Cloud Solutions for SMEs, Future-Ready IT Company in India, Custom Web & App Development Company, IT Consulting for Digital Growth, Data-Driven Business Solutions, Secure and Scalable IT Infrastructure, Modern UI/UX Design with Tech Integration, Full Stack Software Development Company, Best IT company in Lucknow,
+    IT solutions in Lucknow, Uttar Pradesh, AI services in Lucknow, Cloud computing in Lucknow, India, Software development in Lucknow, Top IT services in Uttar Pradesh, Digital transformation in Lucknow,
+    Lucknow-based IT company, IT consultancy in Lucknow, India, AI & cloud solutions in Lucknow, UP, Top IT company in Uttar Pradesh, Software development in Uttar Pradesh, Digital transformation in Lucknow">
+
+    {% include 'base/include/header.html' %}
+
+    <meta name="google-site-verification" content="">
+    <meta name="google-site-verification" content="">
+
+    <meta property="og:title" content="Your Trusted Partner in Smart Digital Innovation – Mindtrix">
+    <meta property="og:description" content="Mindtrix, based in Lucknow, Uttar Pradesh, India, offers innovative IT solutions using AI, cloud, and data analytics. We empower businesses globally to drive growth and achieve excellence in the digital age.">
+    <meta property="og:image" content="https://faizali.pythonanywhere.com/static/images/og-preview.jpg">
+    <meta property="og:url" content="https://faizali.pythonanywhere.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mindtrix">
+
+</head>
+
+
+<body>
+
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Lucknow, Uttar Pradesh,
+                    Indira Nagar</small>
+                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-9695388053</small>
+                <small class="text-light text"><i class="fa fa-envelope-open me-2"></i><a href="mailto"
+                                                                                          class="text-white">mindtrixindia@gmail.com</a></small>
+                <!-- <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a
+                            href="mailto" class="__cf_email__"
+                            data-cfemail="a5cccbc3cae5c0ddc4c8d5c9c08bc6cac8"></a></small> -->
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/mind-trix-03a7b0361/">
+                    <i  class="fab fa-linkedin-in fw-normal"></i></a>
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/mindtrixindia/">
+                    <i class="fab fa-instagram fw-normal"></i></a>
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/PyAutoMotes">
+                    <i class="fab fa-facebook-f fw-normal"></i></a>
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="#">
+                    <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar & Carousel Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="{% url 'home' %}" class="navbar-brand p-0">
+                            <!--<h1 class="m-0">-->
+                            <!--    MINDTRIX-->
+                            <!--</h1>-->
+             <img src="{% static 'img/mindtrix1.png' %}" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="{% url 'home' %}" class="nav-link ">Home</a>
+                <a href="{% url 'about' %}" class="nav-link ">About</a>
+                <a href="{% url 'services' %}" class="nav-item nav-link">Service</a>
+
+                <a href="{% url 'project' %}" class="nav-item nav-link">Project</a>
+                <a href="#" class="nav-item nav-link">Career </a>
+                <a href="{% url 'team' %}" class="nav-item nav-link">Team </a>
+                <a href="#" class="nav-item nav-link">Client </a>
+                <a href="{% url 'blog' %}" class="nav-item nav-link">Blog</a>
+            </div>
+
+            <a href="{% url 'contact' %}" class="btn btn-primary py-2 px-3 ms-3">Contact Us</a>
+        </div>
+    </nav>
+
+
+</div>
+<!-- Navbar & Carousel End -->
+
+
+<!-- main content start -->
+{% block main %}
+
+
+{% endblock %}
+<!-- main content end -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-black mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column mt-3 align-items-center justify-content-start text-start h-100  p-4">
+                    <a href="#" class="navbar-brand">
+                        <h1 class="m-0 text-white"></i>MINDTRIX</h1>
+                        <p class=" text-white"></p>
+                    </a>
+                    <p class="mt-1 mb-4">MINDTRIX INDIA, We specialize in cutting-edge software development tailored to
+                        meet the evolving needs of businesses. Our expert developers craft innovative, scalable, and
+                        secure solutions, leveraging the latest technologies to drive digital transformation.</p>
+
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title-1 section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="{% url 'home' %}"><Home</a>
+                            <a class="text-light mb-2" href="{% url 'about' %}">About Us</a>
+                            <a class="text-light mb-2" href="{% url 'services' %}">Our Services</a>
+                            <a class="text-light mb-2" href="{% url 'team' %}">Team</a>
+                            <a class="text-light mb-2" href="{% url 'blog' %}">Blog</a>
+                            <a class="text-light" href="{% url 'contact' %}">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title-1 section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Services</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="#">Banking</a>
+                            <a class="text-light mb-2" href="#">E-commerce</a>
+                            <a class="text-light mb-2" href="#">Accounting</a>
+                            <a class="text-light mb-2" href="#">Cloud</a>
+                            <a class="text-light mb-2" href="#">Automation</a>
+                            <a class="text-light" href="#">Industries</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+
+
+                        <div class="section-title-1 section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">Lucknow, Uttar Pradesh, Indira Nagar
+                            </p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0"><a href="#" class="text-white"
+                            >mindtrixindia@gmail.com</a></p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">+91-9695388053
+                            </p>
+                        </div>
+                        <div class="d-flex mt-4">
+
+                            <a class="btn btn-primary btn-square me-2" href="#">
+                                <i class="bi bi-github"></i>
+                                </a>
+
+                            <a class="btn btn-primary btn-square me-2" href="">
+                                <i class="bi bi-linkedin"></i>
+                                </a>
+
+                            <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/mindtrixindia/">
+                                <i class="bi bi-instagram"></i>
+                                </a>
+
+                            <a class="btn btn-primary btn-square me-2" href="#">
+                                <i class="bi bi-facebook"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-between">
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center" style="height: 75px;">
+                    <p class="mb-0 text-left" style="margin-left: 15px;">
+                        <a class="text-white border-bottom">Copyright &copy; 2024</a> -
+                        Powered by <a class="text-white border-bottom" href="{% url 'home' %}">MINDTRIXINDIA</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex align-items-center justify-content-end " style="height: 75px;">
+                    <p class="mb-0 text-right" style="margin-right: 110px;">
+                        <a class="text-white border-bottom" href="#">Terms</a> |
+                        <a class="text-white border-bottom" href="#">Privacy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+{% include 'base/include/footer.html' %}
+
+</body>
+</html>
