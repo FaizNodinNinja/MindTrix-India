@@ -1,0 +1,166 @@
+{% extends 'base/common/base.html'%}
+{% load static %}
+{% block main %}
+
+ <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn mb-3">Blog Detail</h1>
+                    <a href="#" class="h5 text-white">Home</a>
+                    <i class="fa fa-angle-double-right text-white px-2"></i>
+                    <a href="#" class="h5 text-white">Blog Detail</a>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Project Detail Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Detail Start -->
+                <div class="col-lg-8">
+                    <img class="img-fluid w-100 rounded mb-5" src="img/detail.jpg" alt="">
+                    <h1 class="mb-4">Web Design and Development</h1>
+                    <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
+                        magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
+                        amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
+                        sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
+                        aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
+                        sit stet no diam kasd vero.</p>
+                    <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
+                        vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
+                        nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
+                        ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
+                        clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
+                        justo dolore sit invidunt.</p>
+                    <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
+                        vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
+                        nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
+                        ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
+                        clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
+                        justo dolore sit invidunt.</p>
+                    <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
+                        magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
+                        amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
+                        sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
+                        aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
+                        sit stet no diam kasd vero.</p>
+                </div>
+                <!-- Detail End -->
+    
+                <!-- Sidebar Start -->
+                <div class="col-lg-4">
+                    <!-- Project Info Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <ul class="list-group">
+                            <li class="list-group-item active" aria-current="true"><h3 class="text-white mb-0">Project Information</h3></li>
+                            <li class="list-group-item"><span class="text-primary">Project Name:</span> Web Development</li>
+                            <li class="list-group-item"><span class="text-primary">Manager Name:</span> John Doe</li>
+                            <li class="list-group-item"><span class="text-primary">Project URL:</span> www.example.com</li>
+                            <li class="list-group-item"><span class="text-primary">Complete Date:</span> 01 Jan, 2045</li>
+                            <li class="list-group-item"><span class="text-primary">Client Name:</span> John Doe</li>
+                            <li class="list-group-item"><span class="text-primary">Project Rating:</span> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></li>
+                        </ul>
+                    </div>
+                    <!-- Project Info End -->
+
+                    <!-- Project Carousel Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="owl-carousel project-carousel">
+                            <div class="portfolio-item">
+                                <div class="position-relative portfolio-box">
+                                    <div class="portfolio-img rounded overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                    </div>
+                                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                                        <h4>Project Name</h4>
+                                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web Design</small>
+                                    </a>
+                                    <div class="portfolio-btn">
+                                        <a href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="bi bi-plus display-1 text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="position-relative portfolio-box">
+                                    <div class="portfolio-img rounded overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                                    </div>
+                                    <a class="portfolio-title border-bottom border-5 border-primary" href="#">
+                                        <h4>Project Name</h4>
+                                        <small class="text-body text-uppercase"><i class="fa fa-folder text-primary me-2"></i>Web Development</small>
+                                    </a>
+                                    <div class="portfolio-btn">
+                                        <a href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="bi bi-plus display-1 text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Carousel End -->
+    
+                    <!-- Contact Info Start -->
+                    <div class="wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title-1 section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Contact Information</h3>
+                        </div>
+                        <div class="bg-primary rounded p-4">
+                            <div class="d-flex align-items-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded" style="width: 45px; height: 45px;">
+                                    <i class="fa fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="text-white mb-1">+012 345 6789</p>
+                                    <p class="text-white mb-0">+012 345 6789</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded" style="width: 45px; height: 45px;">
+                                    <i class="fa fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="text-white mb-1"><a href="https://demo.htmlcodex.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a13141c153a1f021b170a161f54191517">[email&#160;protected]</a></p>
+                                    <p class="text-white mb-0"><a href="https://demo.htmlcodex.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e2d2b2e2e312c2a1e3b263f332e323b703d3133">[email&#160;protected]</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="bg-white d-flex align-items-center justify-content-center rounded" style="width: 45px; height: 45px;">
+                                    <i class="fa fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <p class="text-white mb-1">Startup, 123 Street</p>
+                                    <p class="text-white mb-0">New York, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Info End -->
+                </div>
+                <!-- Sidebar End -->
+            </div>
+        </div>
+    </div>
+    <!-- Project Detail End -->
+    
+
+ {% endblock %}
